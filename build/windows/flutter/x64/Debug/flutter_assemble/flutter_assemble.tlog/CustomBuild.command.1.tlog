@@ -1,0 +1,28 @@
+^C:\USERS\USER\DESKTOP\FLUTTER PROJECTS\FLUTTER-TYPINGTESTGAME\TYPING_TEST_GAME\BUILD\WINDOWS\CMAKEFILES\118B8AE0B888FC4017646F71F6C260B0\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\user\Documents\flutter "PROJECT_DIR=C:\Users\user\Desktop\Flutter Projects\Flutter-TypingTestGame\typing_test_game" FLUTTER_ROOT=C:\Users\user\Documents\flutter "FLUTTER_EPHEMERAL_DIR=C:\Users\user\Desktop\Flutter Projects\Flutter-TypingTestGame\typing_test_game\windows\flutter\ephemeral" "PROJECT_DIR=C:\Users\user\Desktop\Flutter Projects\Flutter-TypingTestGame\typing_test_game" "FLUTTER_TARGET=C:\Users\user\Desktop\Flutter Projects\Flutter-TypingTestGame\typing_test_game\lib\main.dart" DART_DEFINES=Zmx1dHRlci5pbnNwZWN0b3Iuc3RydWN0dXJlZEVycm9ycz10cnVl,RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false "PACKAGE_CONFIG=C:\Users\user\Desktop\Flutter Projects\Flutter-TypingTestGame\typing_test_game\.dart_tool\package_config.json" C:/Users/user/Documents/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\FLUTTER PROJECTS\FLUTTER-TYPINGTESTGAME\TYPING_TEST_GAME\BUILD\WINDOWS\CMAKEFILES\A11D8F480B62A17B2F847E24D90B46F4\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\USER\DESKTOP\FLUTTER PROJECTS\FLUTTER-TYPINGTESTGAME\TYPING_TEST_GAME\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/user/Desktop/Flutter Projects/Flutter-TypingTestGame/typing_test_game/windows" "-BC:/Users/user/Desktop/Flutter Projects/Flutter-TypingTestGame/typing_test_game/build/windows" --check-stamp-file "C:/Users/user/Desktop/Flutter Projects/Flutter-TypingTestGame/typing_test_game/build/windows/flutter/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

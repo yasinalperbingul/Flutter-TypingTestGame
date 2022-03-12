@@ -1,0 +1,10 @@
+^C:\USERS\USER\DESKTOP\FLUTTER PROJECTS\FLUTTER-TYPINGTESTGAME\TYPING_TEST_GAME\BUILD\WINDOWS\CMAKEFILES\9B3DCE6CEBFE186D9909F8094D598785\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

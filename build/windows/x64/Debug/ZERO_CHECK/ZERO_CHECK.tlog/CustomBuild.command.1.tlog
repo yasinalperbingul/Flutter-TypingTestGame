@@ -1,0 +1,10 @@
+^C:\USERS\USER\DESKTOP\FLUTTER PROJECTS\FLUTTER-TYPINGTESTGAME\TYPING_TEST_GAME\BUILD\WINDOWS\CMAKEFILES\9B3DCE6CEBFE186D9909F8094D598785\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/user/Desktop/Flutter Projects/Flutter-TypingTestGame/typing_test_game/windows" "-BC:/Users/user/Desktop/Flutter Projects/Flutter-TypingTestGame/typing_test_game/build/windows" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/user/Desktop/Flutter Projects/Flutter-TypingTestGame/typing_test_game/build/windows/typing_test_game.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
