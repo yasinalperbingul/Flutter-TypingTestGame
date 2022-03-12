@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';
+import 'package:http/http.dart' as http;
 import 'dart:async';
 
 void main() {
@@ -62,7 +63,7 @@ class _MyAppHomeState extends State<MyAppHome> {
   void resetGame() {
     setState(() {
       typedCharLength = 0;
-      step = 0;
+      step = 1;
     });
   }
 
@@ -72,18 +73,24 @@ class _MyAppHomeState extends State<MyAppHome> {
       step++;
     });
 
-    var timer = Timer.periodic(new Duration(seconds: 1), (timer) {
-      int now = new DateTime.now().millisecondsSinceEpoch;
+    var timer = Timer.periodic(new Duration(seconds: 1), (timer) async {
+      int now = DateTime.now().millisecondsSinceEpoch;
 
-      //Game over
       setState(() {
         if (step == 1 && now - lastTypedAt > 4000) {
+          // GAME OVER
           step++;
         }
-        if (step != 1) {
-          timer.cancel();
-        }
       });
+      if (step != 1) {
+        await http.post(
+            Uri.parse('https://typing-test-game.herokuapp.com/users/score'),
+            body: {
+              'userName': username,
+              'score': typedCharLength.toString(),
+            });
+        timer.cancel();
+      }
     });
   }
 
