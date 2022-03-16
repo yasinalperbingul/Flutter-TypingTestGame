@@ -1,6 +1,4 @@
-# Instagram Flutter Clone
-
-The project is not yet completed. The software is in progress.
+# Flutter Typing Game
 
 ## Getting Started
 
