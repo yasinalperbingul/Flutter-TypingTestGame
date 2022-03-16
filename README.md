@@ -1,6 +1,6 @@
-# typing_test_game
+# Instagram Flutter Clone
 
-A new Flutter project.
+The project is not yet completed. The software is in progress.
 
 ## Getting Started
 
